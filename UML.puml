@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Professeur
+class Discipline
+class Etudiant
+<> Cours
+Professeur "1" -- "*" Cours
+Discipline "*" -- "1" Cours
+Etudiant "5..30" -- "*" Cours
+
+@enduml
